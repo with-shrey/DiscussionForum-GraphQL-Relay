@@ -1,0 +1,56 @@
+type Answer {
+  _id: String!
+  question_id: String
+  answer_id: String
+  solution: String!
+  type: AnswerType!
+}
+
+enum AnswerType {
+  ANSWER
+  REPLY
+}
+
+type Mutation {
+  _empty: String
+  register(firstName: String!, lastName: String!, email: String!, password: String!): Token!
+  login(email: String!, password: String!): Token!
+  addQuestion(query: String!, description: String!): Question!
+  editQuestion(_id: String!, query: String!, description: String!): Question
+  deleteQuestion(_id: String!): Boolean!
+  addAnswer(type: AnswerType!, question_id: String!, answer_id: String!, solution: String!): Answer!
+  editAnswer(_id: String!, solution: String!): Answer!
+  deleteAnswer(_id: String!): Boolean!
+}
+
+type Query {
+  _empty: String
+  me: User!
+  profile: User!
+  question(id: String!): Question
+  questions: [Question]!
+}
+
+type Question {
+  _id: String!
+  query: String!
+  description: String!
+  user_id: String!
+  answers: [Answer]
+  replies: [Answer]
+}
+
+type Token {
+  token: String!
+  user: User!
+}
+
+type User {
+  _id: String!
+  firstName: String!
+  lastName: String!
+  email: String!
+  questions: [Question]
+  answers: [Answer]
+}
+
