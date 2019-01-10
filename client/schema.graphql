@@ -1,0 +1,88 @@
+type Answer {
+  _id: String!
+  question_id: String
+  answer_id: String
+  solution: String!
+  user_id: String!
+  type: AnswerType!
+  replies: [Answer]
+  user: User
+}
+
+input AnswerInput {
+  _id: String!
+  type: AnswerType!
+  question_id: String!
+  answer_id: String!
+  solution: String!
+}
+
+enum AnswerType {
+  ANSWER
+  REPLY
+}
+
+input LoginInput {
+  id: ID
+  email: String!
+  password: String!
+}
+
+type Mutation {
+  _empty: String
+  register(input: RegistrationInput!): Token!
+  login(input: LoginInput!): Token!
+  addQuestion(input: QuestionInput!): Question!
+  editQuestion(input: QuestionInput!): Question
+  deleteQuestion(input: QuestionInput!): Boolean
+  addAnswer(input: AnswerInput!): Answer!
+  editAnswer(input: AnswerInput!): Answer!
+  deleteAnswer(input: AnswerInput!): Boolean!
+}
+
+type Query {
+  _empty: String
+  me: User!
+  profile: User!
+  question(id: String!): Question
+  questions: [Question]!
+}
+
+type Question {
+  _id: String!
+  query: String!
+  description: String!
+  user_id: String!
+  answers: [Answer]!
+  replies: [Answer]
+  user: User
+}
+
+input QuestionInput {
+  _id: String
+  query: String!
+  description: String!
+}
+
+input RegistrationInput {
+  id: ID
+  firstName: String!
+  lastName: String!
+  email: String!
+  password: String!
+}
+
+type Token {
+  token: String!
+  user: User!
+}
+
+type User {
+  _id: String!
+  firstName: String!
+  lastName: String!
+  email: String!
+  questions: [Question]
+  answers: [Answer]
+}
+
