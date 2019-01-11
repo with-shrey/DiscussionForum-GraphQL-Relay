@@ -44,7 +44,7 @@ type Query {
   _empty: String
   me: User!
   profile: User!
-  question(id: String!): Question
+  question(id: String!): Question!
   questions: [Question]!
 }
 
@@ -70,6 +70,13 @@ input RegistrationInput {
   lastName: String!
   email: String!
   password: String!
+}
+
+type Subscription {
+  _empty: String
+  questionAdded: Question
+  answerAdded(questionId: String!): Answer
+  replyAdded(answerId: String!): Answer
 }
 
 type Token {

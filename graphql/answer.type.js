@@ -2,6 +2,10 @@ const gql = require('graphql-tag')
 const AnswerRepository = require('../repository/answer.repository')
 const UserRepository = require( '../repository/user.repository' )
 const Repository = require( '../repository/Repository' )
+const pubsub = require('../subscription')
+const REPLY_ADDED_TOPIC = require( '../constants' ).REPLY_ADDED_TOPIC
+const ANSWER_ADDED_TOPIC = require( '../constants' ).ANSWER_ADDED_TOPIC
+const { withFilter } = require('graphql-subscriptions');
 
 module.exports.typeDef = gql`
   input AnswerInput{
@@ -15,6 +19,10 @@ module.exports.typeDef = gql`
     addAnswer(input: AnswerInput!): Answer!
     editAnswer(input: AnswerInput!): Answer!
     deleteAnswer(input: AnswerInput!): Boolean!
+  }
+  extend type Subscription{
+      answerAdded(questionId: String!):Answer
+      replyAdded(answerId: String!):Answer
   }
   enum AnswerType {
       ANSWER
@@ -75,6 +83,24 @@ module.exports.resolvers = {
         .then(answer => {
           return answer
         })
+    }
+  },
+  Subscription:{
+    answerAdded:{
+      subscribe: withFilter(
+        () => pubsub.asyncIterator(ANSWER_ADDED_TOPIC),
+        (payload, args) => {
+          return payload.question_id === args.question_id && payload.type === 0;
+        }
+      ),
+    } ,
+    replyAdded:{
+      subscribe: withFilter(
+        () => pubsub.asyncIterator(REPLY_ADDED_TOPIC),
+        (payload, args) => {
+          return payload.answer_id === args.answerId&& payload.type === 1;
+        }
+      ),
     }
   },
   Answer: {

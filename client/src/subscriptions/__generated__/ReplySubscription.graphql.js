@@ -1,6 +1,6 @@
 /**
  * @flow
- * @relayHash 19ff07cd852a13aa32dfb9581f22d3d2
+ * @relayHash a1ef39cf33ab809c00e1e0a77a327864
  */
 
 /* eslint-disable */
@@ -9,31 +9,32 @@
 
 /*::
 import type { ConcreteRequest } from 'relay-runtime';
-export type QuestionQueryVariables = {|
-  pageID: string
+export type AnswerType = "ANSWER" | "REPLY" | "%future added value";
+export type ReplySubscriptionVariables = {|
+  answerId: string
 |};
-export type QuestionQueryResponse = {|
-  +question: {|
+export type ReplySubscriptionResponse = {|
+  +replyAdded: ?{|
     +_id: string,
-    +query: string,
-    +description: string,
+    +solution: string,
+    +type: AnswerType,
   |}
 |};
-export type QuestionQuery = {|
-  variables: QuestionQueryVariables,
-  response: QuestionQueryResponse,
+export type ReplySubscription = {|
+  variables: ReplySubscriptionVariables,
+  response: ReplySubscriptionResponse,
 |};
 */
 
 
 /*
-query QuestionQuery(
-  $pageID: String!
+subscription ReplySubscription(
+  $answerId: String!
 ) {
-  question(id: $pageID) {
+  replyAdded(answerId: $answerId) {
     _id
-    query
-    description
+    solution
+    type
   }
 }
 */
@@ -42,7 +43,7 @@ const node/*: ConcreteRequest*/ = (function(){
 var v0 = [
   {
     "kind": "LocalArgument",
-    "name": "pageID",
+    "name": "answerId",
     "type": "String!",
     "defaultValue": null
   }
@@ -51,17 +52,17 @@ v1 = [
   {
     "kind": "LinkedField",
     "alias": null,
-    "name": "question",
+    "name": "replyAdded",
     "storageKey": null,
     "args": [
       {
         "kind": "Variable",
-        "name": "id",
-        "variableName": "pageID",
+        "name": "answerId",
+        "variableName": "answerId",
         "type": "String!"
       }
     ],
-    "concreteType": "Question",
+    "concreteType": "Answer",
     "plural": false,
     "selections": [
       {
@@ -74,14 +75,14 @@ v1 = [
       {
         "kind": "ScalarField",
         "alias": null,
-        "name": "query",
+        "name": "solution",
         "args": null,
         "storageKey": null
       },
       {
         "kind": "ScalarField",
         "alias": null,
-        "name": "description",
+        "name": "type",
         "args": null,
         "storageKey": null
       }
@@ -90,27 +91,27 @@ v1 = [
 ];
 return {
   "kind": "Request",
-  "operationKind": "query",
-  "name": "QuestionQuery",
+  "operationKind": "subscription",
+  "name": "ReplySubscription",
   "id": null,
-  "text": "query QuestionQuery(\n  $pageID: String!\n) {\n  question(id: $pageID) {\n    _id\n    query\n    description\n  }\n}\n",
+  "text": "subscription ReplySubscription(\n  $answerId: String!\n) {\n  replyAdded(answerId: $answerId) {\n    _id\n    solution\n    type\n  }\n}\n",
   "metadata": {},
   "fragment": {
     "kind": "Fragment",
-    "name": "QuestionQuery",
-    "type": "Query",
+    "name": "ReplySubscription",
+    "type": "Subscription",
     "metadata": null,
     "argumentDefinitions": v0,
     "selections": v1
   },
   "operation": {
     "kind": "Operation",
-    "name": "QuestionQuery",
+    "name": "ReplySubscription",
     "argumentDefinitions": v0,
     "selections": v1
   }
 };
 })();
 // prettier-ignore
-(node/*: any*/).hash = '89781ce46c68f890fba7b97b3ce31bfa';
+(node/*: any*/).hash = '1419d4a7fc2ca57b42587e5fd498821f';
 module.exports = node;

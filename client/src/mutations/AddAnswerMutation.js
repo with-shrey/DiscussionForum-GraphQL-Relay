@@ -27,6 +27,9 @@ function AddAnswerMutation(type,solution,question_id ,answer_id,callback) {
     {
       mutation,
       variables,
+      updater: proxyStore =>{
+      
+      },
       onCompleted: (response, errors) => {
         callback(errors,response)
         window.location.reload()

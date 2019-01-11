@@ -4,6 +4,8 @@ import graphql from 'babel-plugin-relay/macro'
 import environment from '../../Emviornment'
 import LoadingIndicator from '../common/LoadingIndicator'
 import QuestionDescription from './QuestionDescription'
+import QuestionSubscription from '../../subscriptions/QuestionSubscription'
+import AnswerSubscription from '../../subscriptions/AnswerSubscription'
 const ThreadPageQuery = graphql`
     query ThreadPageQuery($pageID: String!){
             question(id: $pageID) {
@@ -26,6 +28,9 @@ class ThreadPage extends Component {
     if ( user ){
       this.setState({user_id: JSON.parse(user)._id})
     }
+  }
+  componentDidMount() {
+    AnswerSubscription(this.state.id)
   }
   render() {
     return (

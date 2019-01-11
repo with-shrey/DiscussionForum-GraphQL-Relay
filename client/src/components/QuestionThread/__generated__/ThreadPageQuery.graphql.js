@@ -1,6 +1,6 @@
 /**
  * @flow
- * @relayHash c810d5a7a02d4bbdd27bba297147afeb
+ * @relayHash 125f96e92b35e91f7874c4263daabccf
  */
 
 /* eslint-disable */
@@ -14,7 +14,7 @@ export type ThreadPageQueryVariables = {|
   pageID: string
 |};
 export type ThreadPageQueryResponse = {|
-  +question: ?{|
+  +question: {|
     +$fragmentRefs: QuestionDescription_question$ref
   |}
 |};

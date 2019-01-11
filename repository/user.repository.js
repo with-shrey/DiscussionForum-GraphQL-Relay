@@ -109,12 +109,12 @@ class UserRepository extends Repository{
   /**
    * Questions
    */
-  addQuestion(query,description){
+  addQuestion(query,description,pubsub){
     if ( this.isNotAuthorised() ){
       return new Error("Not Authorised to add question")
     }
       return new QuestionRepository(this.db,this.user._id)
-        .create(query,description)
+        .create(query,description,pubsub)
   }
 }
 

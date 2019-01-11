@@ -3,6 +3,7 @@ const Repository = require( './Repository' )
 const AnswerRepository = require( './answer.repository' )
 const jwt = require( 'jsonwebtoken' )
 ObjectId = require('mongodb').ObjectID;
+const {QUESTION_ADDED_TOPIC} = require( '../constants' )
 
 class QuestionRepository{
   constructor(db,user_id = null){
@@ -15,7 +16,7 @@ class QuestionRepository{
     return ( this.user_id === null )
   }
   
-  create(query,description){
+  create(query,description,pubsub){
     return new Promise((resolve,reject) => {
       this.QuestionCollection.insertOne({
         query: query,
@@ -30,6 +31,7 @@ class QuestionRepository{
           return
         }
         console.log(question["ops"][0])
+        pubsub.publish(QUESTION_ADDED_TOPIC,{questionAdded:question["ops"][0]});  // publish to a topic
         resolve(
           question["ops"][0]
         )

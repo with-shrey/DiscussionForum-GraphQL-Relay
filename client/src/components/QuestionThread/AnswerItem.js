@@ -6,9 +6,12 @@ import graphql from 'babel-plugin-relay/macro'
 import { Link } from 'react-router-dom'
 import AddAnswerReplyForm from './AddAnswerReplyForm'
 import ReplyList from './ReplyList'
+import ReplySubscription from '../../subscriptions/ReplySubscription'
 
 class AnswerItem extends Component {
-  
+  componentDidMount(){
+    ReplySubscription(this.props.answer._id)
+  }
   render(){
     return(
       <div className="row" style={{marginBottom: 20}}>

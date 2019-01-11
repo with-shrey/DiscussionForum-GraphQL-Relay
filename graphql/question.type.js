@@ -1,8 +1,11 @@
+const { QUESTION_ADDED_TOPIC } = require('../constants')
+
 const gql = require('graphql-tag')
 const UserRepository = require('../repository/user.repository')
 const QuestionRepository = require('../repository/question.repository')
 const AnswerRepository = require('../repository/answer.repository')
 const Repository = require( '../repository/Repository' )
+const pubsub = require('../subscription')
 
 module.exports.typeDef = gql`
   extend type Query {
@@ -18,6 +21,9 @@ module.exports.typeDef = gql`
       addQuestion(input: QuestionInput!):Question!
       editQuestion(input: QuestionInput!):Question
       deleteQuestion(input: QuestionInput!):Boolean
+  }
+  extend type Subscription{
+      questionAdded: Question
   }
   type Question {
     _id: String!
@@ -41,10 +47,10 @@ module.exports.resolvers = {
     },
   },
   Mutation:{
-    addQuestion: (obj, arguments, {db,user}, info) => {
+    addQuestion: (obj, arguments, {db,user,pubsub}, info) => {
       const args = arguments.input
       const userRepo = new UserRepository(db,user)
-      return userRepo.addQuestion(args.query,args.description)
+      return userRepo.addQuestion(args.query,args.description,pubsub)
     },
     editQuestion: (obj, arguments, {db,user}, info) => {
       const args = arguments.input
@@ -76,6 +82,11 @@ module.exports.resolvers = {
         .then(question => {
           return question
         })
+    }
+  },
+  Subscription:{
+    questionAdded: {  // create a channelAdded subscription resolver function.
+      subscribe: () => pubsub.asyncIterator(QUESTION_ADDED_TOPIC)  // subscribe to changes in a topic
     }
   },
   Question: {

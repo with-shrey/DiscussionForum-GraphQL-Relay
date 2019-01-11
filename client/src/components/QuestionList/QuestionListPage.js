@@ -4,6 +4,7 @@ import graphql from 'babel-plugin-relay/macro'
 import environment from '../../Emviornment'
 import QuestionList from './QuestionList'
 import LoadingIndicator from '../common/LoadingIndicator'
+import QuestionSubscription from '../../subscriptions/QuestionSubscription'
 const QuestionListPageQuery = graphql`
   query QuestionListPageQuery{
       questions{
@@ -12,6 +13,9 @@ const QuestionListPageQuery = graphql`
   }
 `;
 class QuestionListPage extends Component {
+  componentDidMount() {
+    QuestionSubscription()
+  }
   render() {
     return (
       <QueryRenderer

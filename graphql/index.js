@@ -23,6 +23,9 @@ const Query = gql`
   type Mutation {
      _empty: String
   }
+  type Subscription {
+      _empty: String
+  }
 `;
 const resolvers = {};
 module.exports = makeExecutableSchema({

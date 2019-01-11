@@ -2,6 +2,8 @@ const Answer = require('../models/answer.model')
 const Repository = require( './Repository' )
 const jwt = require( 'jsonwebtoken' )
 ObjectId = require('mongodb').ObjectID;
+const pubsub = require('../subscription')
+const ANSWER_ADDED_TOPIC = require( '../constants' ).ANSWER_ADDED_TOPIC
 
 class AnswerRepository{
   constructor(db,user_id = null){
@@ -30,6 +32,7 @@ class AnswerRepository{
           return
         }
         console.log(answer["ops"][0])
+        pubsub.publish(ANSWER_ADDED_TOPIC,{answerAdded:answer["ops"][0]})
         resolve(
           answer["ops"][0]
         )

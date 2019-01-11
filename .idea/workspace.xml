@@ -2,39 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="663baa02-b3c2-40d6-bc90-7a9765639346" name="Default" comment="Initial">
-      <change afterPath="$PROJECT_DIR$/client/src/Emviornment.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/AddQuestion/QuestionPage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/App/App.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/Login/Login.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/QuestionList/Question.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/QuestionList/QuestionList.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/QuestionList/QuestionListPage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/QuestionThread/AddAnswerReplyForm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/QuestionThread/AnswerItem.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/QuestionThread/AnswerList.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/QuestionThread/QuestionDescription.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/QuestionThread/ReplyItem.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/QuestionThread/ReplyList.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/QuestionThread/ThreadPage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/Register/Register.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/common/LoadingIndicator.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/common/Nav.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/common/asyncComponent.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/routes/AuthenticatedRoute.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/routes/UnauthenticatedRoute.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/mutations/AddAnswerMutation.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/mutations/AddQuestionMutation.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/mutations/DeleteQuestionMutation.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/mutations/EditQuestionMutation.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/mutations/LoginMutation.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/mutations/RegistrationMutation.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/queries/QuestionQuery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/subscriptions/AnswerSubscription.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/subscriptions/QuestionSubscription.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/subscriptions/ReplySubscription.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/subscription.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/App/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/schema.graphql" beforeDir="false" afterPath="$PROJECT_DIR$/client/schema.graphql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/Emviornment.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Emviornment.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/QuestionList/QuestionListPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/QuestionList/QuestionListPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/QuestionThread/AnswerItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/QuestionThread/AnswerItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/QuestionThread/ThreadPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/QuestionThread/ThreadPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/QuestionThread/__generated__/ThreadPageQuery.graphql.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/QuestionThread/__generated__/ThreadPageQuery.graphql.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/mutations/AddAnswerMutation.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/mutations/AddAnswerMutation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/queries/__generated__/QuestionQuery.graphql.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/queries/__generated__/QuestionQuery.graphql.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/client/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/constants.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphql/answer.type.js" beforeDir="false" afterPath="$PROJECT_DIR$/graphql/answer.type.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphql/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/graphql/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphql/question.type.js" beforeDir="false" afterPath="$PROJECT_DIR$/graphql/question.type.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repository/answer.repository.js" beforeDir="false" afterPath="$PROJECT_DIR$/repository/answer.repository.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repository/question.repository.js" beforeDir="false" afterPath="$PROJECT_DIR$/repository/question.repository.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repository/user.repository.js" beforeDir="false" afterPath="$PROJECT_DIR$/repository/user.repository.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -48,27 +42,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="225">
-      <file leaf-file-name="QuestionList.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/src/components/QuestionList/QuestionList.js">
+      <file leaf-file-name="QuestionSubscription.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/src/subscriptions/QuestionSubscription.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="18" column="3" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="18" selection-end-column="3" />
+            <state relative-caret-position="231">
+              <caret line="32" column="23" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
               <folding>
-                <element signature="e#0#40#0" expanded="true" />
+                <element signature="e#0#62#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="QuestionDescription.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/src/components/QuestionThread/QuestionDescription.js">
+      <file leaf-file-name="answer.type.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/graphql/answer.type.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
-              <caret line="12" column="11" lean-forward="true" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#AnswerList#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#AnswerList#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="268">
+              <caret line="94" column="8" lean-forward="true" selection-start-line="94" selection-start-column="8" selection-end-line="94" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -76,41 +66,17 @@
       <file leaf-file-name="question.type.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/graphql/question.type.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="39" column="15" selection-start-line="39" selection-start-column="15" selection-end-line="39" selection-end-column="15" />
+            <state relative-caret-position="-2158">
+              <caret line="7" column="26" selection-start-line="7" selection-end-line="8" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="question.repository.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/repository/question.repository.js">
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="182">
-              <caret line="56" column="8" selection-start-line="56" selection-start-column="8" selection-end-line="56" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Nav.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/src/components/common/Nav.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="38" column="13" lean-forward="true" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
-              <folding>
-                <element signature="e#0#40#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AnswerList.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/src/components/QuestionThread/AnswerList.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
-              <folding>
-                <element signature="e#0#40#0" expanded="true" />
-              </folding>
+              <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -118,8 +84,8 @@
       <file leaf-file-name="ThreadPage.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/src/components/QuestionThread/ThreadPage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="33" column="32" lean-forward="true" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="32" />
+            <state relative-caret-position="152">
+              <caret line="32" column="31" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="31" />
               <folding>
                 <element signature="e#0#40#0" expanded="true" />
               </folding>
@@ -127,11 +93,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoadingIndicator.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/src/components/common/LoadingIndicator.js">
+      <file leaf-file-name="QuestionListPage.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/src/components/QuestionList/QuestionListPage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+            <state relative-caret-position="137">
+              <caret line="17" column="3" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="17" selection-end-column="3" />
+              <folding>
+                <element signature="e#0#40#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AnswerSubscription.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/src/subscriptions/AnswerSubscription.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="41" column="3" lean-forward="true" selection-end-line="48" selection-end-column="1" />
+              <folding>
+                <element signature="e#0#51#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -139,8 +120,8 @@
       <file leaf-file-name="AnswerItem.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/src/components/QuestionThread/AnswerItem.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+            <state relative-caret-position="104">
+              <caret line="15" column="11" lean-forward="true" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
               </folding>
@@ -148,13 +129,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ReplyList.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/client/src/components/QuestionThread/ReplyList.js">
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="14" column="48" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
+            <state relative-caret-position="234">
+              <caret line="18" column="34" lean-forward="true" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ReplySubscription.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/src/subscriptions/ReplySubscription.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="294">
+              <caret line="21" column="35" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
               <folding>
-                <element signature="e#0#40#0" expanded="true" />
+                <element signature="e#0#51#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -174,7 +164,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Answer</find>
       <find>new QuestionRepository</find>
       <find>SECRET</find>
       <find>db</find>
@@ -199,9 +188,12 @@
       <find>console.log</find>
       <find>edit/</find>
       <find>to=</find>
+      <find>newVoteSubscription</find>
+      <find>subscription</find>
+      <find>QuestionSubscription</find>
+      <find>Answer</find>
     </findStrings>
     <replaceStrings>
-      <replace>Reply</replace>
       <replace>UserCollection</replace>
       <replace>this.QuestionCollection</replace>
       <replace>Register</replace>
@@ -218,20 +210,17 @@
       <replace>AnswerItem</replace>
       <replace>Answer</replace>
       <replace>AddAnswerReplyForm</replace>
+      <replace>QuestionSubscription</replace>
+      <replace>AnswerSubscription</replace>
+      <replace>Reply</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/client" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/loaders/index.js" />
-        <option value="$PROJECT_DIR$/graphql/index.js" />
-        <option value="$PROJECT_DIR$/repository/Repository.js" />
-        <option value="$PROJECT_DIR$/models/question.model.js" />
-        <option value="$PROJECT_DIR$/models/user.model.js" />
-        <option value="$PROJECT_DIR$/models/answer.model.js" />
         <option value="$PROJECT_DIR$/models/index.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/client/src/index.js" />
@@ -240,9 +229,7 @@
         <option value="$PROJECT_DIR$/client/src/mutations/LoginMutation.js" />
         <option value="$PROJECT_DIR$/client/public/index.html" />
         <option value="$PROJECT_DIR$/client/src/mutations/RegistrationMutation.js" />
-        <option value="$PROJECT_DIR$/client/src/Emviornment.js" />
         <option value="$PROJECT_DIR$/graphql/user.type.js" />
-        <option value="$PROJECT_DIR$/client/src/components/QuestionList/QuestionListPage.js" />
         <option value="$PROJECT_DIR$/client/src/components/routes/AuthenticatedRoute.js" />
         <option value="$PROJECT_DIR$/client/src/components/routes/UnauthenticatedRoute.js" />
         <option value="$PROJECT_DIR$/client/src/mutations/AddQuestionMutation.js" />
@@ -252,9 +239,7 @@
         <option value="$PROJECT_DIR$/client/src/queries/QuestionQuery.js" />
         <option value="$PROJECT_DIR$/client/src/mutations/EditQuestion.js" />
         <option value="$PROJECT_DIR$/client/src/mutations/EditQuestionMutation.js" />
-        <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/client/src/components/QuestionList/QuestionList.js" />
-        <option value="$PROJECT_DIR$/repository/user.repository.js" />
         <option value="$PROJECT_DIR$/client/src/components/QuestionList/Question.js" />
         <option value="$PROJECT_DIR$/client/src/mutations/DeleteQuestion.js" />
         <option value="$PROJECT_DIR$/client/package.json" />
@@ -264,19 +249,29 @@
         <option value="$PROJECT_DIR$/client/src/components/App/App.js" />
         <option value="$PROJECT_DIR$/client/src/components/QuestionThread/ThreadUI.js" />
         <option value="$PROJECT_DIR$/client/src/components/QuestionThread/ReplyItem.js" />
-        <option value="$PROJECT_DIR$/repository/answer.repository.js" />
-        <option value="$PROJECT_DIR$/client/src/mutations/AddAnswerMutation.js" />
         <option value="$PROJECT_DIR$/client/src/components/QuestionThread/AddAnswerReplyForm.js" />
-        <option value="$PROJECT_DIR$/graphql/answer.type.js" />
-        <option value="$PROJECT_DIR$/client/src/components/QuestionThread/AnswerItem.js" />
         <option value="$PROJECT_DIR$/client/src/components/common/Nav.js" />
         <option value="$PROJECT_DIR$/client/src/components/QuestionThread/QuestionDescription.js" />
-        <option value="$PROJECT_DIR$/graphql/question.type.js" />
-        <option value="$PROJECT_DIR$/client/src/components/QuestionThread/ThreadPage.js" />
         <option value="$PROJECT_DIR$/client/src/components/common/LoadingIndicator.js" />
-        <option value="$PROJECT_DIR$/repository/question.repository.js" />
         <option value="$PROJECT_DIR$/client/src/components/QuestionThread/AnswerList.js" />
         <option value="$PROJECT_DIR$/client/src/components/QuestionThread/ReplyList.js" />
+        <option value="$PROJECT_DIR$/graphql/index.js" />
+        <option value="$PROJECT_DIR$/constants.js" />
+        <option value="$PROJECT_DIR$/repository/user.repository.js" />
+        <option value="$PROJECT_DIR$/subscription.js" />
+        <option value="$PROJECT_DIR$/graphql/question.type.js" />
+        <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/client/src/mutations/AddAnswerMutation.js" />
+        <option value="$PROJECT_DIR$/client/src/Emviornment.js" />
+        <option value="$PROJECT_DIR$/client/src/components/QuestionList/QuestionListPage.js" />
+        <option value="$PROJECT_DIR$/repository/question.repository.js" />
+        <option value="$PROJECT_DIR$/repository/answer.repository.js" />
+        <option value="$PROJECT_DIR$/client/src/subscriptions/QuestionSubscription.js" />
+        <option value="$PROJECT_DIR$/client/src/subscriptions/AnswerSubscription.js" />
+        <option value="$PROJECT_DIR$/client/src/components/QuestionThread/ThreadPage.js" />
+        <option value="$PROJECT_DIR$/client/src/subscriptions/ReplySubscription.js" />
+        <option value="$PROJECT_DIR$/client/src/components/QuestionThread/AnswerItem.js" />
+        <option value="$PROJECT_DIR$/graphql/answer.type.js" />
       </list>
     </option>
   </component>
@@ -324,12 +319,50 @@
             <path>
               <item name="DiscussionForum" type="b2602c69:ProjectViewProjectNode" />
               <item name="DiscussionForum" type="462c0819:PsiDirectoryNode" />
-              <item name="graphql" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="DiscussionForum" type="b2602c69:ProjectViewProjectNode" />
               <item name="DiscussionForum" type="462c0819:PsiDirectoryNode" />
-              <item name="repository" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DiscussionForum" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DiscussionForum" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="QuestionList" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DiscussionForum" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DiscussionForum" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="QuestionThread" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DiscussionForum" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DiscussionForum" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="mutations" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DiscussionForum" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DiscussionForum" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="subscriptions" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DiscussionForum" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DiscussionForum" type="462c0819:PsiDirectoryNode" />
+              <item name="graphql" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -369,7 +402,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="npm.generate">
+  <component name="RunManager" selected="npm.relay">
     <configuration name="dev" type="js.build_tools.npm" factoryName="npm">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -431,9 +464,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.relay" />
         <item itemvalue="npm.generate" />
         <item itemvalue="npm.start (1)" />
-        <item itemvalue="npm.relay" />
         <item itemvalue="npm.eject" />
       </list>
     </recent_temporary>
@@ -466,6 +499,8 @@
       <workItem from="1546882452538" duration="7002000" />
       <workItem from="1546968340829" duration="610000" />
       <workItem from="1547139022579" duration="11969000" />
+      <workItem from="1547154509345" duration="36000" />
+      <workItem from="1547241391857" duration="9240000" />
     </task>
     <task id="LOCAL-00001" summary="Initial">
       <created>1546232971569</created>
@@ -485,7 +520,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="86450000" />
+    <option name="totallyTimeSpent" value="95726000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1366" height="745" extended-state="6" />
@@ -495,8 +530,7 @@
       <window_info anchor="bottom" id="TODO" order="7" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50037175" side_tool="true" weight="0.3294702" />
-      <window_info anchor="bottom" id="GraphQL" order="0" weight="0.33617747" />
-      <window_info anchor="bottom" id="Find" order="2" />
+      <window_info anchor="bottom" id="GraphQL" order="0" weight="0.33788395" />
       <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="Run" order="3" weight="0.32935154" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -510,6 +544,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="2" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -540,6 +575,9 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/client" />
+    </ignored-roots>
     <MESSAGE value="Initial" />
     <MESSAGE value="Client" />
     <option name="LAST_COMMIT_MESSAGE" value="Client" />
@@ -550,48 +588,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/models/user.model.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="29" column="51" selection-start-line="29" selection-start-column="51" selection-end-line="29" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/graphql/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/answer.model.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="13" lean-forward="true" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/question.model.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="124">
@@ -632,13 +628,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/Emviornment.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="26" column="17" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/src/components/routes/AuthenticatedRoute.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="182">
@@ -669,9 +658,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="59">
           <caret line="34" column="12" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -696,24 +682,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="19" column="31" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/src/mutations/EditQuestionMutation.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
           <caret line="12" column="5" lean-forward="true" selection-end-line="37" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/schema.graphql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="702">
-          <caret line="42" column="21" selection-start-line="40" selection-start-column="2" selection-end-line="42" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -724,13 +696,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="13" column="66" selection-start-line="13" selection-start-column="66" selection-end-line="13" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/src/components/common/asyncComponent.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
@@ -738,20 +703,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/components/QuestionList/QuestionListPage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="13" column="42" lean-forward="true" selection-end-line="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/src/components/App/App.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="416">
           <caret line="31" column="14" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -766,16 +721,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1170">
           <caret line="45" column="11" lean-forward="true" selection-start-line="44" selection-start-column="6" selection-end-line="47" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/repository/user.repository.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="620">
-          <caret line="100" column="6" lean-forward="true" selection-start-line="100" selection-start-column="6" selection-end-line="100" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -789,34 +734,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/mutations/AddQuestionMutation.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="20" column="5" lean-forward="true" selection-end-line="36" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="10" column="4" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/mutations/AddAnswerMutation.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="31" column="32" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/src/components/AddQuestion/QuestionPage.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="309">
           <caret line="94" column="27" selection-start-line="94" selection-end-line="95" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -824,16 +745,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
           <caret line="51" column="35" selection-start-line="51" selection-start-column="35" selection-end-line="51" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/repository/answer.repository.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="23" column="30" lean-forward="true" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -844,44 +755,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/graphql/answer.type.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="77" column="5" lean-forward="true" selection-start-line="77" selection-start-column="5" selection-end-line="77" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/components/QuestionThread/AnswerItem.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/src/components/common/Nav.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="38" column="13" lean-forward="true" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
+        <state relative-caret-position="962">
+          <caret line="38" column="13" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
           <folding>
             <element signature="e#0#40#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/graphql/question.type.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="39" column="15" selection-start-line="39" selection-start-column="15" selection-end-line="39" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/src/components/QuestionList/QuestionList.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="18" column="3" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="18" selection-end-column="3" />
+        <state relative-caret-position="390">
+          <caret line="18" column="3" selection-start-line="6" selection-start-column="1" selection-end-line="18" selection-end-column="3" />
           <folding>
             <element signature="e#0#40#0" expanded="true" />
           </folding>
@@ -891,11 +778,7 @@
     <entry file="file://$PROJECT_DIR$/client/src/components/QuestionThread/QuestionDescription.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="104">
-          <caret line="12" column="11" lean-forward="true" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#AnswerList#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#AnswerList#0;n#!!top" expanded="true" />
-          </folding>
+          <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -906,26 +789,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/components/QuestionThread/ThreadPage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="33" column="32" lean-forward="true" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/repository/question.repository.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="56" column="8" selection-start-line="56" selection-start-column="8" selection-end-line="56" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/src/components/QuestionThread/AnswerList.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
+        <state relative-caret-position="312">
           <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
           <folding>
             <element signature="e#0#40#0" expanded="true" />
@@ -935,11 +801,179 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/src/components/QuestionThread/ReplyList.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="14" column="48" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
+        <state relative-caret-position="736">
+          <caret line="31" column="34" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
           <folding>
             <element signature="e#0#40#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/graphql/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-185">
+          <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subscription.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/mutations/AddQuestionMutation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/schema.graphql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="76" column="15" selection-start-line="76" selection-start-column="2" selection-end-line="76" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="61" column="13" selection-start-line="61" selection-start-column="13" selection-end-line="61" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/mutations/AddAnswerMutation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="2" column="15" selection-start-line="2" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/Emviornment.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#83#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/repository/user.repository.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="115" column="26" selection-start-line="115" selection-start-column="26" selection-end-line="115" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/repository/question.repository.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="806">
+          <caret line="33" column="59" selection-start-line="33" selection-start-column="59" selection-end-line="33" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/constants.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="5" column="20" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/repository/answer.repository.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="38" column="8" lean-forward="true" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/subscriptions/QuestionSubscription.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="32" column="23" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#62#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/QuestionThread/ThreadPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="32" column="31" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/subscriptions/AnswerSubscription.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="41" column="3" lean-forward="true" selection-end-line="48" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/subscriptions/ReplySubscription.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="21" column="35" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/QuestionThread/AnswerItem.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="15" column="11" lean-forward="true" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="18" column="34" lean-forward="true" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/QuestionList/QuestionListPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="17" column="3" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="17" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/graphql/question.type.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2158">
+          <caret line="7" column="26" selection-start-line="7" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/graphql/answer.type.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="94" column="8" lean-forward="true" selection-start-line="94" selection-start-column="8" selection-end-line="94" selection-end-column="8" />
         </state>
       </provider>
     </entry>
