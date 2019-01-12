@@ -3,6 +3,7 @@ const Repository = require( './Repository' )
 const jwt = require( 'jsonwebtoken' )
 ObjectId = require('mongodb').ObjectID;
 const pubsub = require('../subscription')
+const REPLY_ADDED_TOPIC = require( '../constants' ).REPLY_ADDED_TOPIC
 const ANSWER_ADDED_TOPIC = require( '../constants' ).ANSWER_ADDED_TOPIC
 
 class AnswerRepository{
@@ -31,8 +32,10 @@ class AnswerRepository{
           reject(err)
           return
         }
-        console.log(answer["ops"][0])
-        pubsub.publish(ANSWER_ADDED_TOPIC,{answerAdded:answer["ops"][0]})
+        if ( type === 0 )
+          pubsub.publish(ANSWER_ADDED_TOPIC,{answerAdded:answer["ops"][0]})
+        else
+          pubsub.publish(REPLY_ADDED_TOPIC,{replyAdded:answer["ops"][0]})
         resolve(
           answer["ops"][0]
         )
@@ -48,7 +51,6 @@ class AnswerRepository{
             reject(err)
             return
           }
-          console.log(answers)
           resolve(answers)
         })
       

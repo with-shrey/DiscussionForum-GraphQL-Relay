@@ -30,7 +30,6 @@ class QuestionRepository{
           reject(err)
           return
         }
-        console.log(question["ops"][0])
         pubsub.publish(QUESTION_ADDED_TOPIC,{questionAdded:question["ops"][0]});  // publish to a topic
         resolve(
           question["ops"][0]

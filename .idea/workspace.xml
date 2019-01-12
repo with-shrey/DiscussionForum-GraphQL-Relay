@@ -1,34 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="663baa02-b3c2-40d6-bc90-7a9765639346" name="Default" comment="Initial">
-      <change afterPath="$PROJECT_DIR$/client/src/subscriptions/AnswerSubscription.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/subscriptions/QuestionSubscription.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/subscriptions/ReplySubscription.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/subscription.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="663baa02-b3c2-40d6-bc90-7a9765639346" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/schema.graphql" beforeDir="false" afterPath="$PROJECT_DIR$/client/schema.graphql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Emviornment.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Emviornment.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/QuestionList/QuestionListPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/QuestionList/QuestionListPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/QuestionThread/AnswerItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/QuestionThread/AnswerItem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/QuestionThread/ThreadPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/QuestionThread/ThreadPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/QuestionThread/__generated__/ThreadPageQuery.graphql.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/QuestionThread/__generated__/ThreadPageQuery.graphql.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/mutations/AddAnswerMutation.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/mutations/AddAnswerMutation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/queries/__generated__/QuestionQuery.graphql.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/queries/__generated__/QuestionQuery.graphql.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/client/yarn.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/constants.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/graphql/answer.type.js" beforeDir="false" afterPath="$PROJECT_DIR$/graphql/answer.type.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graphql/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/graphql/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graphql/question.type.js" beforeDir="false" afterPath="$PROJECT_DIR$/graphql/question.type.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/repository/answer.repository.js" beforeDir="false" afterPath="$PROJECT_DIR$/repository/answer.repository.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/repository/question.repository.js" beforeDir="false" afterPath="$PROJECT_DIR$/repository/question.repository.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repository/user.repository.js" beforeDir="false" afterPath="$PROJECT_DIR$/repository/user.repository.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -42,23 +19,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="225">
-      <file leaf-file-name="QuestionSubscription.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/src/subscriptions/QuestionSubscription.js">
+      <file leaf-file-name="answer.type.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/graphql/answer.type.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="32" column="23" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
-              <folding>
-                <element signature="e#0#62#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="85">
+              <caret line="93" column="9" lean-forward="true" selection-start-line="93" selection-start-column="9" selection-end-line="93" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="answer.type.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/graphql/answer.type.js">
+      <file leaf-file-name="answer.repository.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/repository/answer.repository.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="268">
-              <caret line="94" column="8" lean-forward="true" selection-start-line="94" selection-start-column="8" selection-end-line="94" selection-end-column="8" />
+            <state relative-caret-position="390">
+              <caret line="40" column="9" lean-forward="true" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -185,13 +159,13 @@
       <find>answer</find>
       <find>Question</find>
       <find>AddAnswerMutation</find>
-      <find>console.log</find>
       <find>edit/</find>
       <find>to=</find>
       <find>newVoteSubscription</find>
       <find>subscription</find>
       <find>QuestionSubscription</find>
       <find>Answer</find>
+      <find>console.log</find>
     </findStrings>
     <replaceStrings>
       <replace>UserCollection</replace>
@@ -265,12 +239,12 @@
         <option value="$PROJECT_DIR$/client/src/Emviornment.js" />
         <option value="$PROJECT_DIR$/client/src/components/QuestionList/QuestionListPage.js" />
         <option value="$PROJECT_DIR$/repository/question.repository.js" />
-        <option value="$PROJECT_DIR$/repository/answer.repository.js" />
         <option value="$PROJECT_DIR$/client/src/subscriptions/QuestionSubscription.js" />
         <option value="$PROJECT_DIR$/client/src/subscriptions/AnswerSubscription.js" />
         <option value="$PROJECT_DIR$/client/src/components/QuestionThread/ThreadPage.js" />
         <option value="$PROJECT_DIR$/client/src/subscriptions/ReplySubscription.js" />
         <option value="$PROJECT_DIR$/client/src/components/QuestionThread/AnswerItem.js" />
+        <option value="$PROJECT_DIR$/repository/answer.repository.js" />
         <option value="$PROJECT_DIR$/graphql/answer.type.js" />
       </list>
     </option>
@@ -363,6 +337,11 @@
               <item name="DiscussionForum" type="b2602c69:ProjectViewProjectNode" />
               <item name="DiscussionForum" type="462c0819:PsiDirectoryNode" />
               <item name="graphql" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DiscussionForum" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DiscussionForum" type="462c0819:PsiDirectoryNode" />
+              <item name="repository" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -500,7 +479,7 @@
       <workItem from="1546968340829" duration="610000" />
       <workItem from="1547139022579" duration="11969000" />
       <workItem from="1547154509345" duration="36000" />
-      <workItem from="1547241391857" duration="9240000" />
+      <workItem from="1547241391857" duration="9881000" />
     </task>
     <task id="LOCAL-00001" summary="Initial">
       <created>1546232971569</created>
@@ -516,23 +495,31 @@
       <option name="project" value="LOCAL" />
       <updated>1546769822866</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Subscription Support On NodeJS">
+      <created>1547250698336</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1547250698336</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95726000" />
+    <option name="totallyTimeSpent" value="96367000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1366" height="745" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24907063" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24907063" />
       <window_info anchor="bottom" id="TODO" order="7" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50037175" side_tool="true" weight="0.3294702" />
       <window_info anchor="bottom" id="GraphQL" order="0" weight="0.33788395" />
+      <window_info anchor="bottom" id="Find" order="2" />
       <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info anchor="bottom" id="Run" order="3" weight="0.32935154" />
+      <window_info active="true" anchor="bottom" id="Run" order="3" visible="true" weight="0.32935154" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49962825" weight="0.32935154" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -544,7 +531,6 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="2" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -580,7 +566,8 @@
     </ignored-roots>
     <MESSAGE value="Initial" />
     <MESSAGE value="Client" />
-    <option name="LAST_COMMIT_MESSAGE" value="Client" />
+    <MESSAGE value="Subscription Support On NodeJS" />
+    <option name="LAST_COMMIT_MESSAGE" value="Subscription Support On NodeJS" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -882,13 +869,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/repository/answer.repository.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="38" column="8" lean-forward="true" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/src/subscriptions/QuestionSubscription.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
@@ -970,10 +950,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/repository/answer.repository.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="40" column="9" lean-forward="true" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/graphql/answer.type.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="94" column="8" lean-forward="true" selection-start-line="94" selection-start-column="8" selection-end-line="94" selection-end-column="8" />
+        <state relative-caret-position="85">
+          <caret line="93" column="9" lean-forward="true" selection-start-line="93" selection-start-column="9" selection-end-line="93" selection-end-column="9" />
         </state>
       </provider>
     </entry>
