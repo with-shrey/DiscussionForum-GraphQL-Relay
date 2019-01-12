@@ -14,18 +14,22 @@ const QuestionListPageQuery = graphql`
 `;
 class QuestionListPage extends Component {
   componentDidMount() {
-    QuestionSubscription()
+    QuestionSubscription(() => {
+      this.retry()
+    })
   }
   render() {
     return (
       <QueryRenderer
         environment={environment}
         query={QuestionListPageQuery}
-        render={({error, props}) => {
+        render={({error, props,retry}) => {
+          this.retry = retry
           if (error) {
             return <LoadingIndicator error={error}/>;
           } else if (props) {
             return <QuestionList
+              retry={retry}
               questions={props.questions}
             />
           }

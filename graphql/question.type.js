@@ -25,7 +25,7 @@ module.exports.typeDef = gql`
   extend type Subscription{
       questionAdded: Question
   }
-  type Question {
+  type Question{
     _id: String!
     query: String!
     description: String!

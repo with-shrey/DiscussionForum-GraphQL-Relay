@@ -29,6 +29,9 @@ const setupSubscription = (config, variables, cacheConfig, observer) => {
   
   const subscriptionClient = new SubscriptionClient('ws://localhost:4000/subscriptions', {reconnect: true})
   subscriptionClient.subscribe({query, variables}, (error, result) => {
+    if ( error ){
+      console.log(error)
+    }
     observer.onNext({data: result})
   })
 }

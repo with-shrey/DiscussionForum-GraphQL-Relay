@@ -16,12 +16,13 @@ const AnswerSubscription = graphql`
 `
 
 // 3
-export default (questionId) => {
+export default (questionId,callback) => {
   
   const subscriptionConfig = {
     subscription: AnswerSubscription,
     variables: {questionId},
     updater: proxyStore => {
+      callback && callback()
       const question = proxyStore.getRootField('answerAdded')
       const _id = question.getValue('_id')
       const solution = question.getValue('solution')

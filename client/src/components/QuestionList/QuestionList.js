@@ -21,8 +21,8 @@ class QuestionList extends Component {
     return (
       <div className="container">
         {
-          this.props.questions.map(question  => {
-            return <Question key={question._id} question={question} user_id={this.state.user_id} />
+          this.props.questions.map((question,index)  => {
+            return <Question key={index} question={question} user_id={this.state.user_id} />
           })
         }
       </div>

@@ -32,7 +32,6 @@ function AddAnswerMutation(type,solution,question_id ,answer_id,callback) {
       },
       onCompleted: (response, errors) => {
         callback(errors,response)
-        window.location.reload()
       },
       onError: err => callback(err),
     },

@@ -31,6 +31,7 @@ class AddAnswerReplyForm extends  Component{
         }else{
           console.log(state)
           this.setState({error: null, loading: false,solution:''})
+          window.location.reload()
         }
       }
     )

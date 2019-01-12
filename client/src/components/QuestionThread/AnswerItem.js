@@ -9,8 +9,8 @@ import ReplyList from './ReplyList'
 import ReplySubscription from '../../subscriptions/ReplySubscription'
 
 class AnswerItem extends Component {
-  componentDidMount(){
-    ReplySubscription(this.props.answer._id)
+  componentDidMount() {
+    ReplySubscription( this.props.answer._id )
   }
   render(){
     return(

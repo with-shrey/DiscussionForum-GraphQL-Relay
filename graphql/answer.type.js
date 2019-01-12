@@ -90,7 +90,7 @@ module.exports.resolvers = {
       subscribe: withFilter(
         () => pubsub.asyncIterator(ANSWER_ADDED_TOPIC),
         (payload, args) => {
-          return payload.questionAdded.question_id === args.question_id && payload.questionAdded.type === 0;
+          return payload.answerAdded.question_id === args.questionId && payload.answerAdded.type === 0;
         }
       ),
     } ,

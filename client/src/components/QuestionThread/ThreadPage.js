@@ -30,7 +30,9 @@ class ThreadPage extends Component {
     }
   }
   componentDidMount() {
-    AnswerSubscription(this.state.id)
+    AnswerSubscription(this.state.id,() => {
+      this.retry()
+    })
   }
   render() {
     return (
@@ -43,11 +45,13 @@ class ThreadPage extends Component {
             variables={{
               pageID: this.state.id,
             }}
-            render={({error, props}) => {
+            render={({error, props,retry}) => {
+              this.retry = retry
               if (error) {
                 return <LoadingIndicator loading={false} error={error}/>;
               } else if (props) {
                 return <QuestionDescription
+                  retry = {retry}
                   user_id={this.state.user_id}
                   question={props.question}
                 />

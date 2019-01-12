@@ -35,7 +35,7 @@ class QuestionDescription extends Component {
         <div className="row" style={{marginTop: 30}}>
           <div className="col-md-8 offset-md-2">
             <p className="display-4" style={{margin: 30, fontSize: 30}}>New Answer</p>
-            <AddAnswerReplyForm className={'col-md-8 offset-md-2'}  type={"ANSWER"} questionId={this.props.question._id} />
+            <AddAnswerReplyForm retry={this.props.retry} className={'col-md-8 offset-md-2'}  type={"ANSWER"} questionId={this.props.question._id} />
           </div>
         </div>
       </div>
